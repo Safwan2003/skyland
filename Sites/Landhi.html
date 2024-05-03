@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyland</title>
+    <link rel="shortcut icon" type="image" href="../assets/skyland.png">
+    <link rel="stylesheet" href="./style-2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body class="bg-gray-100">    
+    <header>
+        <div class="flex justify-between items-center">
+            <span class="text-2xl font-[Poppins] cursor-pointer text-[#0B679D] poppins-bold flex items-center max-md:relative max-md:right-[5rem]">
+                <img class="lg:h-20 max-md:h-16 md:h-16 inline" src="../assets/skyland.png" alt="Skyland Logo">
+                <span class="text-[#32852B]">SKY</span>LAND
+            </span>
+            <div class="menu md:flex hidden">
+                <div class="btn">
+                    <i class='bx bxs-x-circle close-btn'></i>
+                </div>
+                <div class="lg:relative lg:left-[20rem] poppins-extrabold">
+                    <a href="../index.html">Home</a>
+                    <a href="../index.html">Services</a>
+                    <a href="../index.html">About</a>
+                    <a href="#Sites">Sites</a>
+                    <a href="../index.html">Contact</a>
+                </div>
+            </div>
+            <div class="btn md:hidden">
+                <i class='bx bx-menu-alt-right menu-btn text-4xl md:ml-[20rem]'></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="text-5xl font-mono font-semibold text-center m-5 relative top-[10rem] ">Landhi</div>
+
+    <section id="project">
+        <!--container--------->
+        <div class="portfolio-container">
+          <!--1------------>
+          <a href="../assets/Landhi89/01.jpg" class="portfolio-box app" data-lightbox="work">
+            <img alt="" src="../assets/Landhi89/01.jpg">
+          </a>
+          <!--1------------>
+          <a href="../assets/Landhi89/02.jpg" class="portfolio-box app" data-lightbox="work">
+            <img alt="" src="../assets/Landhi89/02.jpg">
+          </a>
+          <!--1------------>
+          <a href="../assets/Landhi89/03.jpg" class="portfolio-box app" data-lightbox="work">
+            <img alt="" src="../assets/Landhi89/03.jpg">
+          </a>
+         
+        </div>
+        </section>
+        <!--js---------------------------------->
+        
+        <script>
+            $(document).ready(function(){
+                // Lightbox initialization
+                lightbox.option({
+                    'resizeDuration': 200,
+                    'wrapAround': true,
+                    'disableScrolling': true
+                });
+        
+                /*blog-filter-menu----------------------------*/
+                $(document).on('click','.portfolio-filter li',function(){
+                    $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active')
+                });
+                
+                /*portfolio-filter---------------------------------*/
+                $('.portfolio-box').click(function(e){
+                    e.preventDefault(); // Prevent default link behavior
+                    
+                    // Find index of clicked image
+                    var index = $('.portfolio-box').index(this);
+                    
+                    // Open lightbox starting from the clicked image
+                    lightbox.option({
+                        'positionFromTop': 200, // Adjust this value as per your layout
+                        'alwaysShowNavOnTouchDevices': true, // Show navigation on touch devices
+                        'albumLabel': 'Image %1 of %2', // Custom label for image count
+                        'wrapAround': true, // Enable looping through images
+                        'disableScrolling': true, // Disable scrolling when lightbox is open
+                        'fadeDuration': 500, // Duration of fade in/out animations
+                        'fitImagesInViewport': true, // Fit large images in viewport
+                        'startAt': index // Start lightbox at clicked image
+                    });
+                });
+            });
+        </script>
+
+
+
+
+
+     <section>
+        <div class="gap-8 bg-white p-8 rounded-lg shadow-lg">
+            <div class="md:col-span-1">
+                <h3 class="text-center md:text-left text-2xl poppins-extrabold mb-6 border-b-2 border-gray-700 pb-2">BRIEF DESCRIPTION</h3>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed poppins-light">
+                    Located in the bustling downtown area of Landhi, 
+                    our billboard stands tall at 50x25 ft, making it a prominent 
+                    fixture in the cityscape. Situated at Dawood Chowrangi Towards Landhi, 
+                    this prime location ensures maximum exposure to a diverse audience 
+                    of commuters, shoppers, and tourists. 
+                    With its strategic placement and eye-catching design, 
+                    this billboard offers an unparalleled opportunity to 
+                    showcase your brand and message to thousands of potential 
+                    customers every day.
+                </p>
+                
+                <h4 class="text-center md:text-left text-2xl poppins-extrabold mt-10 mb-6 border-b-2 border-gray-700 pb-2">Info</h4>
+                
+                <table class="w-full text-lg text-gray-700">
+                    <tbody>
+                        <tr class="hover:bg-gray-200 cursor-pointer">
+                            <td class="py-3 pr-6 poppins-medium">Location</td>
+                            <td class="py-3 poppins-regular">Landhi 89</td>
+                        </tr>
+                        <tr class="hover:bg-gray-200 cursor-pointer">
+                            <td class="py-3 pr-6 poppins-medium">Size</td>
+                            <td class="py-3 poppins-regular">50 x 25 ft</td>
+                        </tr>
+                        <tr class="hover:bg-gray-200 cursor-pointer">
+                            <td class="py-3 pr-6 poppins-medium">Near by</td>
+                            <td class="py-3 poppins-regular">Dawood Chowrangi Towards Landhi</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+     
+
+<section id="Sites">
+    <div class="space-y-5 m-2">
+    <div class="text-gray-500 poppins-bold text-center">Our Works</div>
+    <div class="text-3xl poppins-extrabold text-center">Explore Our New Outdoor Sites.</div>
+</div>
+<div class="p-5 flex flex-col justify-center">
+    
+<section class="py-10">
+    <div class="container mx-auto px-4">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button onclick="navigateToPage('./Bahadurabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Bahadurabad</button>
+            <button onclick="navigateToPage('./BalochFlyover.html')"  class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Baloch Flyover</button>
+            <button onclick="navigateToPage('./Karimabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Karimabad</button>
+            <button onclick="navigateToPage('./Korangi-4.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Korangi 4</button>
+            <button onclick="navigateToPage('./Korangi.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Korangi Road Kaala Pull</button>
+            <button onclick="navigateToPage('./KorangiDHA.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Korangi Road Kaala Pull</button>
+            <button onclick="navigateToPage('./Nazimabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Nazimabad</button>
+            <button onclick="navigateToPage('./ShafiqMor.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shafiq Mor</button>
+            <button onclick="navigateToPage('./ShahFaisal-2.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shah Faisal Colony Gate</button>
+            <button onclick="navigateToPage('./ShahFaisal.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shah Faisal Colony Gate</button>
+            <button onclick="navigateToPage('./ShahraPakistanKarimabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shahra Pakistan Kareemabad</button>
+            <button onclick="navigateToPage('./ToobaMasjid.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Tooba Masjid DHA</button>
+            <button onclick="navigateToPage('./UniversityRoad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">University Road</button>
+            <button onclick="navigateToPage('./WaterPump.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Water Pump</button>
+        <script>
+            // Buttons Navigation Start
+function navigateToPage(url) {
+  window.location.href = url;
+}
+// Buttons Navigation End
+        </script>
+        </div>
+    </div>
+</section>
+</div>
+</section>
+
+
+     <footer class="bg-black text-white py-12 px-6 sm:px-8 md:px-12 lg:px-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+            <div class="text-center sm:text-left">
+                <img src="../assets/logo.svg" class="lg:w-[20rem]  mx-auto sm:mx-0 mb-4"/>
+                <p class="text-gray-500 poppins-light">Welcome to our marketing agency. Let's create something awesome together!</p>
+            </div>
+            <div class="text-center sm:text-left lg:mt-20">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27154391.920120075!2d27.812348804810597!3d33.395355745565034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b5b350dac5aa111%3A0x58c1f5dd94116098!2sskyland!5e0!3m2!1sen!2s!4v1712566378547!5m2!1sen!2s" width="300" height="200" class="w-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="text-center sm:text-left lg:mt-10">
+                <div class="flex justify-center sm:justify-start space-x-5 my-6">
+                    <a href="#" class="text-blue-500 hover:text-blue-700"><i class='bx bxl-facebook-circle text-2xl'></i></a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600"><i class='bx bxl-twitter text-2xl'></i></a>
+                    <a href="#" class="text-red-500 hover:text-red-700"><i class='bx bxl-gmail text-2xl'></i></a>
+                    <a href="https://wa.me/03002834517" class="text-green-500 hover:text-green-700"><i class='bx bxl-whatsapp text-2xl'></i></a>
+                </div>
+                <div class="text-xl poppins-bold mb-4">Explore</div>
+                <div class="space-y-3">
+                    <p><a href="../index.html" class="text-gray-400 hover:text-gray-200 poppins-light">Home</a></p>
+                    <p><a href="../index.html" class="text-gray-400 hover:text-gray-200 poppins-light">About us</a></p>
+                    <p><a href="#Sites" class="text-gray-400 hover:text-gray-200 poppins-light">Our Sites</a></p>
+                    <p><a href="../index.html" class="text-gray-400 hover:text-gray-200 poppins-light">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-gray-900 text-center py-4">
+        <p class="text-gray-300 poppins-regular-italic">© Copyright reserved by <span class="poppins-bold">SKYLAND</span></p>
+    </div>
+    
+
+
+    
+
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="../index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyland</title>
+    <link rel="shortcut icon" type="image" href="./assets/skyland.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> <!-- If you have additional custom styles -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+    <div id="progress">
+        <span id="progress-value"><i class='bx bx-up-arrow-alt'></i></span>
+    </div>
+    <div id="whatsapp">
+        <a href="https://wa.me/923002834517" target="_blank" id="toggle1" class="wtsapp">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+    </div>
+    <header>
+        <div class="flex justify-between items-center">
+            <span class="text-2xl font-[Poppins] cursor-pointer text-[#0B679D] poppins-bold flex items-center max-md:relative max-md:right-[5rem]">
+                <img class="lg:h-20 max-md:h-16 md:h-16 inline" src="./assets/skyland.png" alt="Skyland Logo">
+                <span class="text-[#32852B]">SKY</span>LAND
+            </span>
+            <div class="menu md:flex hidden">
+                <div class="btn">
+                    <i class='bx bxs-x-circle close-btn'></i>
+                </div>
+                <div class="lg:relative lg:left-[20rem] poppins-extrabold">
+                    <a href="index.html">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about-us">About</a>
+                    <a href="#Sites">Sites</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="btn md:hidden">
+                <i class='bx bx-menu-alt-right menu-btn text-4xl md:ml-60'></i>
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+
+
+<!-- //slider -->
+<section class="slick-slider overflow-hidden">
+    <div class="relative w-screen h-[600px]">
+        <img src="./assets/slider/3.jpg" alt="Slider Image 1" class="relative md:absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+            <p class="text-[#fff] text-3xl lg:text-5xl lg:w-[45rem] poppins-extrabold">Shaping the <span class="text-[#32852B]">Perfect</span> Solution for your <span class="text-[#32852B]">Company</span></p>
+            <button onclick="navigateToPage('#Sites')" class="bg-[#0B679D] p-2 px-3  poppins-medium text-white mt-4">Discover More</button>
+        </div>
+    </div>
+
+    <div class="relative w-screen h-[600px]">
+        <img src="./assets/slider/1.jpg" alt="Slider Image 2" class="relative md:absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+            <p class="text-white text-3xl lg:text-5xl lg:w-[45rem] poppins-extrabold">Shaping the <span class="text-[#32852B]">Perfect</span> Solution for your <span class="text-[#32852B]">Company</span></p>
+            <button onclick="navigateToPage('#Sites')" class="bg-[#0B679D] p-2 px-3  poppins-medium text-white mt-4">Discover More</button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ourservices -->
+<section id="services">
+<div class="max-md:py-10 lg:py-[8rem] px-5 lg:px-[3rem]  bg-[#000] border-b-4">
+    <p class=" poppins-thin  tracking-[.5rem] mb-4 text-white">OUR SERVICES</p>
+    <p class="text-2xl poppins-bold  mb-4 text-white">Elevating Your Outdoor Presence</p>
+    <p class="text-base mb-8 poppins-light text-white">
+
+        At Skyland Advertisers, we specialize in taking your brand to new heights through innovative outdoor advertising solutions. Our services are designed to captivate your audience and leave a lasting impression. Here's what we offer</p>
+</div>
+    <div class="lg:relative bottom-[5rem] px-5  grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md rounded-lg">
+           <div><img src="./assets/strategy-development.png" class="w-[5rem]" alt=""> </div>
+           <p class="text-xl poppins-semibold mb-2">Strategic Outdoor Campaigns
+        </p>
+           <p class="text-base poppins-regular">Our team of experts crafts tailored outdoor advertising strategies to ensure maximum visibility and impact for your brand. Whether it's billboards, transit ads, or guerrilla marketing, we know how to make your message stand out.</p>
+        </div>
+        
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md rounded-lg">
+            <div><img src="./assets/billboard.png" class="w-[5rem]" alt=""> </div>
+            <p class="text-xl poppins-semibold mb-2">Outdoor Advertising</p>
+            <p class="text-base poppins-regular">Our dedicated team handles every aspect of your outdoor advertising campaign, from planning and execution to monitoring and optimization. We're committed to delivering results and exceeding your expectations every step of the way.</p>
+        </div>
+        
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md rounded-lg">
+            <div><img src="./assets/billboards.png" class="w-[5rem]" alt=""> </div>
+            <p class="text-xl poppins-semibold mb-2">Prime Location Sourcing    </p>
+            <p class="text-base poppins-regular">Location is key in outdoor advertising, and we have the expertise to secure the best spots for your campaigns. Whether it's high-traffic areas, strategic intersections, or iconic landmarks, we'll find the perfect placement to ensure maximum exposure.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- get to know us -->
+
+
+<section class="grid my-10 lg:grid-cols-2 gap-4 lg:px-10 items-center" id="about-us">
+    <video controls autoplay loop id="about-video" src="./assets/SkyLand.mp4" poster=""></video>
+
+    <section class="my-8 px-5">
+        <p class="text-gray-600 text-lg poppins-medium mb-2">GET TO KNOW US</p>
+        <p class="text-2xl poppins-semibold mb-4">Why Choose Skyland Outdoor Advertising?</p>
+        <p class="text-base mb-4 poppins-regular">Elevate your brand to new heights with Skyland Outdoor Advertising. We specialize in delivering captivating outdoor advertising solutions that make a lasting impression. Whether you're looking to boost brand awareness, drive traffic to your business, or promote a special event, we have the expertise and resources to help you achieve your goals.</p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
+            <div class="bg-gray-100 p-4 shadow-md text-center flex flex-col justify-center items-center">
+                <div><img src="./assets/solution.png" class="w-[5rem] "></div>
+                <p class="text-lg poppins-semibold mb-2">Innovative Solutions</p>
+                <p class="text-base poppins-light">From traditional billboards to digital displays, we offer a diverse range of advertising mediums tailored to suit your specific needs.</p>
+            </div>
+            <div class="bg-gray-100 p-4 shadow-md text-center flex flex-col justify-center items-center">
+                <div><img src="./assets/idea.png" class="w-[5rem] "></div>
+                <p class="text-lg poppins-semibold mb-2">Creative Excellence</p>
+                <p class="text-base poppins-light"> Our team of skilled marketers will work closely with you to create compelling and memorable advertisements that resonate with your audience.</p>
+            </div>
+            <div class="bg-gray-100 p-4 shadow-md text-center flex flex-col justify-center items-center">
+                <div><img src="./assets/map-navigation.png" class="w-[5rem] "></div>
+                <p class="text-lg poppins-semibold mb-2">Strategic Locations</p>
+                <p class="text-base poppins-light">Our prime advertising locations ensure maximum exposure for your message, reaching your target audience effectively.</p>
+            </div>
+            <div class="bg-gray-100 p-4 shadow-md text-center flex flex-col justify-center items-center">
+                <div><img src="./assets/help-desk.png" class="w-[5rem] "></div>
+                <p class="text-lg poppins-semibold mb-2">Exceptional Service</p>
+                <p class="text-base poppins-light">Customer satisfaction is our top priority. We strive to provide personalized service and support every step of the way.</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+
+<!-- ceo -->
+<section class="flex max-md:flex-col lg:justify-between lg:px-[10rem]  p-10 space-y-10 items-center text-center">
+<div>
+    <img src="./assets/IMG-20240407-WA0097-removebg-preview.png" class="rounded-full  shadow-2xl shadow-blue-300"/>
+</div>
+<div class="lg:relative right-[15rem]">
+
+    <p class=" text-3xl poppins-bold">SHAHZAD GILL</p>
+    <p class=" text-xl poppins-medium">CEO & CO-FOUNDER</p>
+</div>
+</section>
+
+<!-- years experience -->
+<section class="lg:hidden my-10 flex flex-col justify-center items-center text-center">
+    <div>
+        <img src="./assets/certificate.jpg" class="  max-md:w-screen px-[1rem] relative top-[9rem] z-[-1] "/>
+    </div>
+    <span class="text-[150px] text-[#fff] poppins-bold " style="text-shadow: 5px 10px  #0B679D;">25</span>
+    <p class="text-3xl poppins-extrabold relative ">Years Experience</p>
+
+
+<div class="grid grid-cols-3 max-md:grid-cols-1 gap-4  my-10  px-2">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
+        <div class="bg-gray-100 p-4 shadow-md text-center flex flex-col justify-center items-center">
+            <div><img src="./assets/quality-services.png" class="w-[5rem] "></div>
+            <p class="text-lg poppins-semibold mb-2">High Quality Service</p>
+            <p class="text-base poppins-light">Discover exceptional content solutions tailored to your needs. Leveraging extensive marketing expertise, we specialize in crafting compelling content that resonates with your audience. Elevate your brand's presence and drive success with our high-quality services.</p>
+        </div>
+        <div class="bg-gray-100 p-4 shadow-md text-center flex flex-col justify-center items-center">
+            <div><img src="./assets/idea.png" class="w-[5rem] "></div>
+            <p class="text-lg poppins-semibold mb-2">Perfect Buisness Solution</p>
+            <p class="text-base poppins-light"> Empower your brand with our perfect business solutions. Drawing from extensive marketing expertise, we specialize in crafting tailored content strategies that drive results. Let us be your partner in achieving your business goals and standing out in today's competitive market.</p>
+        </div>
+        <div class="bg-gray-100 p-4 shadow-md text-center flex flex-col justify-center items-center">
+            <div><img src="./assets/handshake.png" class="w-[5rem] "></div>
+            <p class="text-lg poppins-semibold mb-2">Commitment to Deliver</p>
+            <p class="text-base poppins-light">Experience our unwavering commitment to deliver excellence. With a proven track record in marketing, we promise to provide top-tier content solutions tailored to your unique needs. Trust us to go above and beyond, ensuring your success in every endeavor.</p>
+        </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--for pc years experience -->
+<section class=" my-10 max-lg:hidden grid grid-cols-2 gap-4 px-[5rem] bg-[#1d1d1d] text-white" >
+    <div>
+        <img src="./assets/certificate.jpg" class="  w-[30rem] mt-[5rem] "/>
+    </div>
+   <div>
+
+       <span class="text-[150px] poppins-bold text-white  poppins" style="text-shadow: 5px 10px  #0B679D;">25</span>
+       <p class="text-3xl poppins-extrabold relative ">Years Experience</p>
+       
+       
+       <div class="grid grid-cols-3 max-md:grid-cols-1 gap-4  my-5  px-2"></div>
+       
+       <div class="poppins-regular p-5">
+        With over a decade of industry expertise, we at SkyLand have been at the forefront of innovative marketing strategies. Our journey began with a vision to revolutionize the way businesses connect with their audiences, and today, we stand proud as a trusted partner for numerous brands worldwide.</div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="Sites">
+    <div class="space-y-5 m-2">
+    <div class="text-gray-500 poppins-bold text-center">Our Works</div>
+    <div class="text-3xl poppins-extrabold text-center">Explore Our New Outdoor Sites.</div>
+</div>
+<div class="p-5 flex flex-col justify-center">
+    
+<section class="py-10">
+    <div class="container mx-auto px-4">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button onclick="navigateToPage('./Sites/Bahadurabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Bahadurabad</button>
+            <button onclick="navigateToPage('./Sites/BalochFlyover.html')"  class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Baloch Flyover</button>
+            <button onclick="navigateToPage('./Sites/Karimabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Karimabad</button>
+            <button onclick="navigateToPage('./Sites/Korangi-4.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Korangi 4</button>
+            <button onclick="navigateToPage('./Sites/Korangi.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Korangi Road Kaala Pull</button>
+            <button onclick="navigateToPage('./Sites/KorangiDHA.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Korangi Road Kaala Pull</button>
+            <button onclick="navigateToPage('./Sites/Landhi.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Landhi 89</button>
+            <button onclick="navigateToPage('./Sites/Nazimabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Nazimabad</button>
+            <button onclick="navigateToPage('./Sites/ShafiqMor.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shafiq Mor</button>
+            <button onclick="navigateToPage('./Sites/ShahFaisal-2.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shah Faisal Colony Gate</button>
+            <button onclick="navigateToPage('./Sites/ShahFaisal.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shah Faisal Colony Gate</button>
+            <button onclick="navigateToPage('./Sites/ShahraPakistanKarimabad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Shahra Pakistan Kareemabad</button>
+            <button onclick="navigateToPage('./Sites/ToobaMasjid.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Tooba Masjid DHA</button>
+            <button onclick="navigateToPage('./Sites/UniversityRoad.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">University Road</button>
+            <button onclick="navigateToPage('./Sites/WaterPump.html')" class="bg-[#0B679D] text-white poppins-semibold py-1 px-2 rounded-lg shadow-md hover:bg-[#32852B] transition duration-300 text-xs md:text-base">Water Pump</button>
+        </div>
+    </div>
+    <script>
+        // Buttons Navigation Start
+function navigateToPage(url) {
+window.location.href = url;
+}
+// Buttons Navigation End
+    </script>
+</section>
+</div>
+</section>
+
+
+
+
+
+
+
+<section class="contact-details" id="contact">
+    <div class="contact-container ">
+        <div class="contact-row">
+            <div class="col-xl-7 col-lg-6">
+                <div class="sec-title">
+                    <span class="sub-title">Send us email</span>
+                    <h2>Feel free to write</h2>
+                </div>
+                <form id="contact_form" name="contact_form" class="" action="" method="get">
+                    <div class="contact-row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <input name="form_botcheck" class="form-control" type="hidden" value="">
+                        <button type="submit" class="theme-btn btn-style-one me-3" data-loading-text="Please wait...">
+                            <span class="btn-title">Send message</span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="contact-details__right">
+                            <div class="sec-title">
+                                <span class="sub-title">Need any help?</span>
+                                <h2>Get in touch with us</h2>
+                                <div class="text">Have questions or need assistance? Reach out to us anytime – we're here to help!</div>
+                            </div>
+                            <ul class="list-unstyled contact-details__info">
+                                <li>
+                                    <div class="icon">
+                                        <span><i class='bx bxs-phone'></i></span>
+                                    </div><div class="text">
+                                        <h6>Have Any Question?</h6>
+                                        <a href="#">
+                                             +92 3002834517</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span><i class='bx bxs-envelope'></i></span>
+                                        </div>
+                                        <div class="text">
+                                            <h6>Write Email</h6>
+                                            <a href="mailto:skyland@gmail.com">shehzad.skyland@gmail.com</a>
+                                        </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span><i class='bx bx-location-plus' ></i></span>
+                                            </div>
+                                            <div class="text">
+                                                <h6>Visit Anytime</h6>
+                                                <span>Shara Faisal</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-black text-white py-12 px-6 sm:px-8 md:px-12 lg:px-24">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+        <div class="text-center sm:text-left">
+            <img src="./assets/logo.svg" class="lg:w-[20rem]  mx-auto sm:mx-0 mb-4"/>
+            <p class="text-gray-500 poppins-light">Welcome to our marketing agency. Let's create something awesome together!</p>
+        </div>
+        <div class="text-center sm:text-left lg:mt-20">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27154391.920120075!2d27.812348804810597!3d33.395355745565034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b5b350dac5aa111%3A0x58c1f5dd94116098!2sskyland!5e0!3m2!1sen!2s!4v1712566378547!5m2!1sen!2s" width="300" height="200" class="w-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="text-center sm:text-left lg:mt-10">
+            <div class="flex justify-center sm:justify-start space-x-5 my-6">
+                <a href="#" class="text-blue-500 hover:text-blue-700"><i class='bx bxl-facebook-circle text-2xl'></i></a>
+                <a href="#" class="text-blue-400 hover:text-blue-600"><i class='bx bxl-twitter text-2xl'></i></a>
+                <a href="mailto:shehzad.skyland@gmail.com" class="text-red-500 hover:text-red-700"><i class='bx bxl-gmail text-2xl'></i></a>
+                <a href="https://wa.me/923002834517" class="text-green-500 hover:text-green-700"><i class='bx bxl-whatsapp text-2xl'></i></a>
+            </div>
+            <div class="text-xl poppins-bold mb-4">Explore</div>
+            <div class="space-y-3">
+                <p><a href="index.html" class="text-gray-400 hover:text-gray-200 poppins-light">Home</a></p>
+                <p><a href="#about-us" class="text-gray-400 hover:text-gray-200 poppins-light">About us</a></p>
+                <p><a href="#Sites" class="text-gray-400 hover:text-gray-200 poppins-light">Our Sites</a></p>
+                <p><a href="#contact" class="text-gray-400 hover:text-gray-200 poppins-light">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="bg-gray-900 text-center py-4">
+    <p class="text-gray-300 poppins-regular-italic">© Copyright reserved by <span class="poppins-bold">SKYLAND</span></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
